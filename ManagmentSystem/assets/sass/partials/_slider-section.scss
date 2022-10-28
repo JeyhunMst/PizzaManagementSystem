@@ -1,0 +1,62 @@
+.slider {
+  .popup {
+    display: flex;
+    min-width: 1272px;
+    min-height: 400px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    .inner {
+      width: 1110px;
+      height: 400px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+    }
+
+    .arrows {
+      display: flex;
+      font-size: 50px;
+    }
+    .prev {
+      display: flex;
+      justify-content: start;
+      min-width: 37.5px;
+      min-height: 50.4px;
+      color: orange;
+      cursor: pointer;
+    }
+    .prev:active {
+      color: black;
+    }
+    .next {
+      min-width: 37.5px;
+      min-height: 50.4px;
+      display: flex;
+      justify-content: end;
+
+      color: orange;
+      cursor: pointer;
+    }
+    .next:active {
+      color: black;
+    }
+  }
+
+  @media (min-width: 300px) {
+    .next {
+      min-width: 37.5px;
+      min-height: 50.4px;
+    }
+    .prev {
+      min-width: 37.5px;
+      min-height: 50.4px;
+    }
+  }
+}
