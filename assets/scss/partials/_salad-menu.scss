@@ -1,0 +1,32 @@
+#salad-menu {
+    .salad-container {
+        .salad-row {
+            .col3-salad {
+                .salad-card {
+                    border-color: white;
+                }
+                .salad-card-body {
+        
+
+                    .salad-price {
+                        display: flex;
+
+                        .salad-size{
+                            font-size: 12px;
+                            position: absolute;
+                            left: 107px;
+                            bottom: 48px;
+                        }
+
+                        .salad-icon {
+                            position: absolute;
+                            left: 70px;
+                            bottom: 66px;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}

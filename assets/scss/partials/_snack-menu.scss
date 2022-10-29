@@ -1,0 +1,24 @@
+#snack-menu {
+    .snack-container {
+        .snack-row {
+            .col3-snack {
+                .snack-card {
+                    border-color: white;
+                }
+
+                .snack-card-body {                  
+                    .snack-price {
+                        display: flex;
+
+                        .snack-icon {
+                            position: absolute;
+                            left: 70px;
+                            bottom: 66px;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}

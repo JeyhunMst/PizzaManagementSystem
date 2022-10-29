@@ -1,0 +1,38 @@
+#pasta-menu {
+    .pasta-container {
+        .pasta-row {
+            .col3-pasta {
+                .pasta-card {
+                    border-color: white;
+                }
+
+                .pasta-card-body {
+                    .pasta-btn {
+                        width: 200px;
+                        border-radius: 12px;
+                        border: solid 1px #bfc5c7;
+                        ;
+                    }
+
+                    .pasta-btn:hover {
+                        color: white;
+                        background-color: #d94524;
+                    }
+
+                    .pasta-price {
+                        display: flex;
+
+                      
+
+                        .pasta-icon {
+                            position: absolute;
+                            left: 70px;
+                            bottom: 66px;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,43 @@
+#soup-menu {
+    .soup-container {
+        .soup-row {
+            .col3-soup {
+                .soup-card {
+                    border-color: white;
+                }
+
+                .soup-card-body {
+                    .soup-btn {
+                        width: 200px;
+                        border-radius: 12px;
+                        border: solid 1px #bfc5c7;
+                        
+                    }
+
+                    .soup-btn:hover {
+                        color: white;
+                        background-color: #d94524;
+                    }
+
+                    .soup-price {
+                        display: flex;
+
+                        .soup-size {
+                            font-size: 12px;
+                            position: absolute;
+                            left: 107px;
+                            bottom: 48px;
+                        }
+
+                        .soup-icon {
+                            position: absolute;
+                            left: 70px;
+                            bottom: 66px;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
