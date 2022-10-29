@@ -1,29 +1,33 @@
-#pasta-menu {
-    .pasta-container {
-        .pasta-row {
-            .col3-pasta {
-            .pasta-card {
+#deserts-menu {
+    .desert-container {
+        .desert-row {
+            .col3-desert {
+                .desert-card {
                     @include card;
-            
+
+
                     img {
                         transition: all 0.5s;
                     }
                 }
-                .pasta-card:hover {
+
+                .desert-card:hover {
                     .choose-btn {
                         @include hover-btn;
                     }
-                   .icon-zoom {
+
+                    .icon-zoom {
                         @include icon-hover;
                     }
                 }
-                     .pasta-price {
-                        .price{
-                            @include price;
-                        }
-                       
-                     }
+
+                .desert-price {
+                    .price {
+                        @include price;
+                    }
+
                 }
             }
         }
     }
+}

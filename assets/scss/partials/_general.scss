@@ -1,13 +1,56 @@
+    @mixin price {
+        display: inline-block;
+        font-size: 25px;
+        margin-top: 10px;
+    }
     .choose-btn {
-            width: 200px;
-            border-radius: 12px;
-            border: solid 1px #bfc5c7;
-    
-        }
-                 .choose-btn:hover {
-                     color: white;
-                     background-color: #d94524;
-                 }
+        display: block;
+        width: 240px;
+        height: 40px;
+        border: 1px solid rgba(128, 128, 128, 0.232);
+        border-radius: 10px;
+        background-color: white;
+        color: grey;
+        font-size: 13px;
+        transition: all 0.3s;
+    }
+   .icon-zoom {
+        position: absolute;
+        left: 76px;
+        top: 75px;
+        width: 130px;
+        height: 130px;
+        border-radius: 100%;
+        background-color: rgba(0, 0, 0, 0.534);
+        transition: all 0.3s;
+        opacity: 0;
 
- 
+            .zoom {
+             position: absolute;
+             left: 53px;
+             top: 53px;
+             font-size: 26px;
+             color: white;       
+                       }
+                   }
+    @mixin card {
+         width: 20%;
+         border: 0px;
+        transition: all 0.3s;
+        
+    }
 
+    @mixin hover-btn {
+        background-color: rgba(255, 0, 0, 0.885);
+            color: white;
+    }
+    @mixin icon-hover {
+        opacity: 100%;
+    }          
+    @mixin  gr-size {
+        font-size: 12px;
+        position: absolute;
+        left: 107px;
+        bottom: 48px;
+        
+    }

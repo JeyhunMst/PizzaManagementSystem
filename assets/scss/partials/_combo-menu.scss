@@ -3,36 +3,24 @@
         .combo-row {
             .col3-pizza {
                 .combo-card{
-                    border-color: white;
-                }
-                .combo-last-menu {
-                    width: 286px;
-                    height: 222px;
-                }
-
-                .combo-card-body {
-                    .combo-btn {
-                        width: 200px;
-                        border-radius: 12px;
-                        border: solid 1px #bfc5c7;;
+                    @include card;
+                    img{
+                        transition: all 0.5s;
                     }
-                    .combo-btn:hover{
-                        color: white;
-                        background-color: #d94524;                        
-                    }
-
-                    .combo-price{
-                        display: flex;
-
-                        .combo-icon{
-                            position: absolute;
-                            left: 70px;
-                            bottom: 66px;
-                            }
-                            
-                        }
+                }
+                .combo-card:hover{
+                   .choose-btn{
+                    @include hover-btn;
+                   }
+                   .icon-zoom{
+                    @include icon-hover;
+                   }
+                }
+                     .price{  
+                        @include price;
+                                                                              
+                         }
                     }
                 }
             }
         }
-    }

@@ -2,41 +2,28 @@
     .soup-container {
         .soup-row {
             .col3-soup {
-                .soup-card {
-                    border-color: white;
+            .soup-card {
+                    @include card;        
+                    img {
+                        transition: all 0.5s;
+                    }
                 }
-
-                .soup-card-body {
-                    .soup-btn {
-                        width: 200px;
-                        border-radius: 12px;
-                        border: solid 1px #bfc5c7;
-                        
+                .soup-card:hover {
+                    .choose-btn {
+                        @include hover-btn;
                     }
-
-                    .soup-btn:hover {
-                        color: white;
-                        background-color: #d94524;
+                    .icon-zoom {
+                        @include icon-hover;
                     }
-
+                }
                     .soup-price {
-                        display: flex;
-
+                       .price{
+                        @include price;
+                       }
                         .soup-size {
-                            font-size: 12px;
-                            position: absolute;
-                            left: 107px;
-                            bottom: 48px;
+                            @include gr-size;
                         }
-
-                        .soup-icon {
-                            position: absolute;
-                            left: 70px;
-                            bottom: 66px;
-                        }
-
-                    }
-                }
+                    }               
             }
         }
     }

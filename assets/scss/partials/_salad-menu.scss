@@ -3,29 +3,32 @@
         .salad-row {
             .col3-salad {
                 .salad-card {
-                    border-color: white;
-                }
-                .salad-card-body {
-        
-
-                    .salad-price {
-                        display: flex;
-
-                        .salad-size{
-                            font-size: 12px;
-                            position: absolute;
-                            left: 107px;
-                            bottom: 48px;
+                        @include card;
+                
+                        img {
+                            transition: all 0.5s;
                         }
-
-                        .salad-icon {
-                            position: absolute;
-                            left: 70px;
-                            bottom: 66px;
-                        }
-
                     }
-                }
+                
+                    .salad-card:hover {
+                        .choose-btn {
+                            @include hover-btn;
+                        }
+                
+                        .icon-zoom {
+                            @include icon-hover;
+                        }
+                    }
+                   
+                    .salad-price {
+                        .price {
+                                @include price;
+                            }
+                        .salad-size{
+                        @include gr-size;
+                        }
+                    }
+                
             }
         }
     }
