@@ -1,3 +1,10 @@
+#pizzas .title {
+  display: inline-block;
+  position: relative;
+  left: 10%;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
 #pizzas .d-none {
   display: none;
 }
@@ -15,18 +22,6 @@
   background-color: white;
   color: grey;
   font-size: 13px;
-  transition: all 0.3s;
-}
-#pizzas .edit-btn {
-  display: block;
-  width: 200px;
-  height: 40px;
-  border: 1px solid rgba(128, 128, 128, 0.232);
-  border-radius: 10px;
-  background-color: white;
-  color: grey;
-  font-size: 13px;
-  margin-top: 3px;
   transition: all 0.3s;
 }
 #pizzas .product-info {
@@ -60,10 +55,6 @@
   color: white;
 }
 #pizzas .pizza-card:hover .choose-btn {
-  background-color: rgba(255, 0, 0, 0.885);
-  color: white;
-}
-#pizzas .pizza-card:hover .edit-btn {
   background-color: rgba(255, 0, 0, 0.885);
   color: white;
 }
