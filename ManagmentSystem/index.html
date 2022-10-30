@@ -16,8 +16,8 @@
 </head>
 
 <body>
-    <section id="float-sm-start slider-section">
-        <div class="container gallery">
+    <section id="slider-section" class="slider-section d-none">
+        <div class="container gallery ">
             <div class="row">
                 <a href="./assets/images/slider-section-images/0b8f2a7471f17a4d9508e15566cafe2c.jpg" class="col-md-4"
                     style="display: none;">
@@ -44,22 +44,58 @@
                             alt="pizza" class="img-fluid">
                     </a>
             </div>
-            <div class="container slider">
-                <div class="popup">
-                    <div class="arrows prev">
-                        <i class="fa-solid fa-chevron-left"></i>
-                    </div>
-                    <div class="inner">
-                        <img src="./assets/images/slider-section-images/0b8f2a7471f17a4d9508e15566cafe2c.jpg"
-                            alt="pizza">
-                    </div>
-                    <div class="arrows next">
-                        <i class="fa-solid fa-chevron-right"></i>
-                    </div>
+
+            <div class="slider">
+                <div class="arrows prev">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </div>
+                <div class="inner">
+                    <img src="./assets/images/slider-section-images/0b8f2a7471f17a4d9508e15566cafe2c.jpg" alt="pizza">
+                </div>
+                <div class="arrows next">
+                    <i class="fa-solid fa-chevron-right"></i>
                 </div>
             </div>
-
     </section>
+    <section id="order-register" class="order-register">
+        <div class="container">
+            <div class="title">
+                <h1>Checkout</h1>
+            </div>
+            <div class="row">
+                <form method="get" class=".order-form">
+                    <label for="name-of-user">Name: </label><br>
+                    <input type="text" id="name-of-user" class="name-of-user"><br>
+                    <i class="name-error">Name is required*</i><br>
+                    <label for="number-of-user">Phone: </label> <br>
+                    <select name="" id="numbers-phone">
+                        <option value="1">055</option>
+                        <option value="1">070</option>
+                        <option value="1">050</option>
+                        <option value="1">012</option>
+                        <option value="1">051</option>
+                    </select>
+                    <input type="tel" id="number-of-user" class="number-of-user" placeholder="e.g XXXXXXX"><br>
+                    <i class="number-error">Phone number is required*</i> <br>
+                    <label for="full-address">Indicate full address: </label><br>
+                    <input type="text" id="full-address" class="address-of-user"><br>
+                    <i class="address-error">Full-address is required*</i><br>
+                    <label>Payment method</label><br>
+                    <input type="radio" id="cash" name="payment-method" value="cash" checked>
+                    <label for="cash" class="cash-method">Cash</label><br>
+                    <input type="radio" id="card" name="payment-method" value="card">
+                    <label for="card" class="card-method">Card payment</label><br>
+                    <div class="result-value">
+                        <h5>Checkout summary:</h5>
+                        <span></span>
+                    </div>
+                    <button class="order-pizza">Order</button>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
 </body>
 
 </html>
